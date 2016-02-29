@@ -24,7 +24,7 @@ void PokerGame::dealHands(CardHolder* deck) {
     Hand insertHand;
     string name;
     cout << "STARTING POKER GAME" << endl;
-    cout << "Enter the names of the " << getNumPlayers() << " players, pressing enter after each one: " << endl;
+    cout << "Enter the names of the " << getNumPlayers() << " players, seperated by a space: " << endl;
     for(int i=0;i<getNumPlayers();i++){
         cin >> name;
         insertHand = Hand(name, 5, deck);

@@ -13,7 +13,7 @@ BridgeGame::BridgeGame(CardHolder *deck) {
 void BridgeGame::dealHands(CardHolder *deck) {
     Hand insertHand;
     string name;
-    cout << "Enter the names of the " << getNumPlayers() << " players, pressing enter after each one: " << endl;
+    cout << "Enter the names of the " << getNumPlayers() << " players, seperated by a space: " << endl;
     for(int i=0;i<getNumPlayers();i++){
         cin >> name;
         insertHand = Hand(name, 13, deck);

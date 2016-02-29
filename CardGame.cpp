@@ -12,7 +12,7 @@ int CardGame::getNumPlayers() const{
 
 void CardGame::printHands() {
     for(int i=0;i<getNumPlayers();i++){
-        cout << "Player: " << playerHands[i].getPlayerName() << endl;
+        cout << "Player: " << playerHands[i].getPlayerName() << endl << "------------------------------" << endl;
         playerHands[i].lookAtHand();
         cout << endl << endl;
     }

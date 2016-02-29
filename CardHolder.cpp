@@ -21,7 +21,6 @@ Card CardHolder::drawTop() {
     cards.erase(cards.begin());
     return returnCard;
 }
-
 Card CardHolder::lookAtTop() const {
     return cards[0];
 }
@@ -38,5 +37,7 @@ void CardHolder::shuffle() {
 }
 
 void CardHolder::discardCards(int num) {
-    cards.erase(cards.begin());
+    for(int i=0;i<num;i++) {
+        cards.erase(cards.begin());
+    }
 }
